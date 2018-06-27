@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#DFF5FF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/motorcontrol_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:text="motor control"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/orange2"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textSSID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SSID : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textCust"
+                style="@style/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cust_open"
+                android:textSize="20sp"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:id="@+id/seekBarValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="0%"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/seekBarPercent"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:progressBackgroundTint="#000"
+                android:colorControlActivated="#2ECCFA"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:max="4"
+                android:progress="0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/text0percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="    0%"
+                   />
+
+                <TextView
+                    android:id="@+id/text25percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="   25%"
+                    />
+
+                <TextView
+                    android:id="@+id/text50percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text=" 50%"
+                    />
+
+                <TextView
+                    android:id="@+id/text75percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="75%"
+                    />
+
+                <TextView
+                    android:id="@+id/text100percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="100%"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="219dp">
+
+                    <ImageView
+                        android:id="@+id/iv_subir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/iv_stop"
+                        android:layout_marginEnd="24dp"
+                        app:srcCompat="@drawable/arrow_up_rel" />
+
+                    <ImageView
+                        android:id="@+id/iv_bajar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="50dp"
+                        app:srcCompat="@drawable/arrow_down_rel" />
+
+                    <ImageView
+                        android:id="@+id/iv_stop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/iv_bajar"
+                        android:layout_centerHorizontal="true"
+                        app:srcCompat="@drawable/stop_rel" />
+
+                    <TextView
+                        android:id="@+id/tv_Bajar"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/iv_bajar"
+                        android:layout_alignTop="@+id/iv_bajar"
+                        android:layout_marginTop="100dp"
+                        android:text="@string/btn_bajar"
+                        android:textAlignment="center"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_Subir"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_Bajar"
+                        android:layout_alignBottom="@+id/tv_Bajar"
+                        android:layout_alignEnd="@+id/iv_subir"
+                        android:text="@string/btn_subir"
+                        android:textAlignment="center"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_Stop"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_Bajar"
+                        android:layout_alignBottom="@+id/tv_Bajar"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/btn_stop"
+                        android:textAlignment="center"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/motorState"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:text="State : "
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/Config_msg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:textAlignment="center"
+                            android:textColor="@color/list_text_title"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

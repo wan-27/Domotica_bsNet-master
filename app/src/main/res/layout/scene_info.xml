@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollScene"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.domotica.domotica_bsnet.Scenes.ActivityShowScene">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#DFF5FF"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewDevSI1"
+                style="@style/Device_Title" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_name"
+                    style="@style/textTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/name_scene" />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/toggleActiv"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/toggle_selector"
+                        android:textOff="@string/inactiv_scene"
+                        android:textOn="@string/activ_scene" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextNameScene"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLines="1" />
+
+
+            <TextView
+                android:id="@+id/text_weekdays"
+                style="@style/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/week_scene" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/toggleMon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="40dp"
+                    android:background="@drawable/toggle_selector_day"
+                    android:textOff="@string/mon_scene"
+                    android:textOn="@string/mon_scene" />
+
+
+                <ToggleButton
+                    android:id="@+id/toggleTue"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/toggle_selector_day"
+                    android:textOff="@string/tue_scene"
+                    android:textOn="@string/tue_scene" />
+
+                <ToggleButton
+                    android:id="@+id/toggleWed"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/toggle_selector_day"
+                    android:textOff="@string/wed_scene"
+                    android:textOn="@string/wed_scene" />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/toggleThu"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/toggle_selector_day"
+                    android:textOff="@string/thu_scene"
+                    android:textOn="@string/thu_scene" />
+
+                <ToggleButton
+                    android:id="@+id/toggleFri"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/toggle_selector_day"
+                    android:textOff="@string/fri_scene"
+                    android:textOn="@string/fri_scene" />
+
+                <ToggleButton
+                    android:id="@+id/toggleSat"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/toggle_selector_day"
+                    android:textOff="@string/sat_scene"
+                    android:textOn="@string/sat_scene" />
+
+                <ToggleButton
+                    android:id="@+id/toggleSun"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/toggle_selector_day"
+                    android:textOff="@string/sun_scene"
+                    android:textOn="@string/sun_scene" />
+
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_tiempo"
+                    style="@style/textTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_scene"/>
+
+                <EditText
+                    android:id="@+id/editTextTimeScene"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_Accion"
+                    style="@style/textTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_scene" />
+
+                <Spinner
+                    android:id="@+id/spinnerScene"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/text_percent"
+                    style="@style/textTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_percent" />
+
+                <Spinner
+                    android:id="@+id/spinnerPercent"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonSaveScene"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_color_with_state"
+                    android:text="@string/save_name"
+                    android:textColor="@color/list_item_title" />
+
+
+                <Button
+                    android:id="@+id/buttonCancelScene"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/button_color_with_state"
+                    android:text="@string/btn_cancel"
+                    android:textColor="@color/list_item_title" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

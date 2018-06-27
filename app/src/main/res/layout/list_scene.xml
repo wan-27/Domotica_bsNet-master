@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dip">
+    <!--    android:background="@drawable/row_item"-->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/scenename0"
+            style="@style/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:maxLines="1"
+            android:text="@string/name_scene"
+            />
+
+        <TextView
+            android:id="@+id/scenestate0"
+            style="@style/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:maxLines="1"
+            android:text="@string/state_scene"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/scenename1"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            />
+
+
+        <TextView
+            android:id="@+id/scenestate1"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:maxLines="1"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/scenetime0"
+            style="@style/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:maxLines="1"
+            android:text="@string/time_scene"
+            />
+
+        <TextView
+            android:id="@+id/sceneactivity0"
+            style="@style/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:maxLines="1"
+            android:text="@string/action_scene"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/scenetime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"/>
+
+
+        <TextView
+            android:id="@+id/sceneactivity1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:layout_marginTop="10dp"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="15dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+

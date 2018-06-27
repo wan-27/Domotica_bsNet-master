@@ -1,0 +1,203 @@
+<resources>
+    <string name="app_name">Domótica bsNet</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Dispositivos</item>
+        <item>Opciones</item>
+        <item>Salir</item>
+    </string-array>
+
+    <string-array name="host_options_percent">
+        <item>Renombrar</item>
+        <item>Abrir Web</item>
+        <item>Configurar dispositivo</item>
+        <item>Escenas</item>
+        <item>Conf. % Apertura</item>
+        <item>Eliminar</item>
+    </string-array>
+
+    <string-array name="host_options">
+        <item>Renombrar</item>
+        <item>Abrir Web</item>
+        <item>Configurar dispositivo</item>
+        <item>Escenas</item>
+        <item>Eliminar</item>
+    </string-array>
+
+    <!--Device configuration  -->
+    <string-array name="configuration_options">
+        <item>Configuración General</item>
+        <item>Configuración de Red</item>
+        <item>Información de Red</item>
+        <item>Ajuste NTP</item>
+        <item>Ajuste del Sistema</item>
+    </string-array>
+
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="info_unknown">Desconocido</string>
+    <string name="info_gateway">GATEWAY</string>
+    <string name="info_device">Dispositivo</string>
+    <string name="info_vendor">%1$s/ssid: %2$s</string>
+
+    <!-- Net Messages -->
+    <string name="net_ip">IP: %1$s/%2$d (%3$s)</string>
+    <string name="net_carrier">PROVEEDOR: %s</string>
+    <string name="net_ssid">SSID: %s</string>
+    <string name="net_mode">MODO: %s</string>
+    <string name="net_mode_wifi">WiFi (%1$s %2$s)</string>
+    <string name="net_mode_mobile">Movil</string>
+    <string name="net_mode_eth">Ethernet (No soportado aún)</string>
+    <string name="net_mode_unknown">Desconocido</string>
+
+    <!-- Discover messages -->
+    <string name="discover_start">Búsqueda iniciada...</string>
+    <string name="discover_finished">Búsqueda finalizada!</string>
+    <string name="discover_canceled">Búsqueda cancelada!</string>
+    <string name="discover_empty">Pulse "Buscar" para empezar</string>
+
+    <!-- WiFi Messages -->
+    <string name="wifi_enabled">El WiFi está activado</string>
+    <string name="wifi_enabling">El WiFi se está activando</string>
+    <string name="wifi_disabling">El WiFi se está desactivando</string>
+    <string name="wifi_disabled">El WiFi está desactivado</string>
+    <string name="wifi_scanning">El WiFi está escaneando</string>
+    <string name="wifi_associating">El WiFi se está asocuando con %s</string>
+    <string name="wifi_dhcp">Obteniendo dirección IP de %s</string>
+    <string name="wifi_unknown">Estado de WiFi desconocido</string>
+
+    <!-- PREFERENCE MENU -->
+    <string name="preferences_credits">Créditos</string>
+    <string name="preferences_email_title">Contacto</string>
+    <string name="preferences_version_title">Versión</string>
+    <string name="preferences_redSouliss">Red Souliss</string>
+    <string name="service" >Servicio </string>
+    <string name="general" >General</string>
+
+    <!-- OPCIONES -->
+    <string name="opt_udpport" >Puerto UDP</string>
+    <string name="udpport_summary">Elegir el puerto de salida (%1$d)</string>
+    <string name="opt_userindex">Índice de Usuario</string>
+    <string name="opt_nodeindex">Índice de Nodo</string>
+    <string name="opt_Network">Red</string>
+    <string name="opt_serviceEnable">Servicio de Datos</string>
+    <string name="opt_serviceEnable_desc">Servicio en segundo plano. Matiene Souliss sincronizado</string>
+    <string name="opt_serviceinterval">Intervalo del Servicio</string>
+    <string name="opt_serviceinterval_desc">Mayor velocidad requiere mayor uso de batería y recursos</string>
+    <string name="userindex_summary">El índice de usuario identifica el cliente Android con Souliss. El valor actual es %1$d. Usar un valor en el rango de 1 .. 100</string>
+    <string name="nodeindex_summary">El índice de Nodo identifica este dispositio en las placas Souliss. El valor actual es %1$d. Usar un valor en el rango de 1 .. 254</string>
+
+    <!-- VARIOS -->
+    <string name="udphint" >Por favor, Introduzca un numero en el rango 1&#8211;65535</string>
+    <string name="useridxhint">Porfavor, Introduzca un numero en el rango 1&#8211;100</string>
+    <string name="nodeidxhint">Porfavor, Introduzca un numero en el rango 1&#8211;254</string>
+
+    <!-- MESSAGES -->
+    <string name="ExitMsg">"Pulsa BACK de nuevo para Salir"</string>
+    <string name="msg_NO_webDevice">Dispositivo sin página web</string>
+
+    <!-- BUTTONS -->
+    <string name="btn_discover">Buscar</string>
+    <string name="btn_options">Opciones</string>
+    <string name="ScanNetwork">Buscar Dispositivos</string>
+    <string name="btn_ok">Ok</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="btn_discover_cancel">Cancelar</string>
+    <string name="btn_subir">Subir</string>
+    <string name="btn_bajar">Bajar</string>
+    <string name="btn_stop">Parar</string>
+
+    <!-- MAIN MENU -->
+    <string name="menu_exit">Salir</string>
+    <string name="menu_options">Opciones</string>
+    <string name="menu_ojo">Mostrar todo</string>
+
+    <!-- Títulos DialogFragments -->
+    <string name="titl_hostname">Renombrar dispositivo</string>
+    <string name="opt_hostname">Opciones Dispositivo</string>
+    <string name="titl_deldevice">¿Desea eliminar el dispositivo "%s" ?</string>
+
+    <!-- Blind States -->
+    <string name="st_blindstate">Estado Persiana : %s</string>
+    <string name="st_open">Abierta</string>
+    <string name="st_close">Cerrada</string>
+    <string name="st_stop">Parada</string>
+    <string name="st_opening">Abriendo</string>
+    <string name="st_closing">Cerrando</string>
+
+    <string name="conf_device">Configurar Dispositivo</string>
+    <string name="dev_name">Nombre del Dispositivo:  </string>
+    <string name="save_name">Guardar</string>
+
+    <!-- Actividades de configuración -->
+    <string name="gen_conf">Configuración General</string>
+    <string name="net_conf">Configuración de Red</string>
+    <string name="net_inf">Información de Red</string>
+    <string name="ntp_conf">Ajuste NTP</string>
+    <string name="sys_set">Ajustes del Sistema</string>
+
+
+
+    <string name="text_netopt">Ajustes para conectar con el Router</string>
+    <string name="pass">Contraseña: </string>
+    <string name="netmask">Máscara de Red: </string>
+    <string name="gateway">Puerta de Enlace: </string>
+    <string name="net_state">Estado de la Conexión:</string>
+
+    <string name="ntp_time">Hora NTP:  </string>
+    <string name="ntp_date">Fecha NTP:  </string>
+    <string name="ntp_lastsync">Última Sincronización:  </string>
+    <string name="netinfo_refresh">Recargar</string>
+
+    <string name="name_scene">Nombre:</string>
+    <string name="state_scene">Estado:</string>
+    <string name="activ_scene">Activo</string>
+    <string name="inactiv_scene">Inactivo</string>
+    <string name="week_scene">Días:</string>
+    <string name="time_scene">Hora:</string>
+    <string name="action_scene">Acción:</string>
+    <string name="mon_scene">Lun</string>
+    <string name="tue_scene">Mar</string>
+    <string name="wed_scene">Mie</string>
+    <string name="thu_scene">Jue</string>
+    <string name="fri_scene">Vie</string>
+    <string name="sat_scene">Sab</string>
+    <string name="sun_scene">Dom</string>
+    <string name="delete">Eliminar</string>
+    <string name="act_scene">Escenas</string>
+    <string name="addScene">Añadir escena</string>
+
+    <string-array name="scene_options">
+        <item>Abrir</item>
+        <item>Cerrar</item>
+    </string-array>
+
+    <!-- NTP Serve Messages -->
+    <string name="ntp_server">Servidor NTP:  </string>
+    <string name="update">Actualizar:</string>
+    <string name="update_info">minutos (0=desactivado)</string>
+    <string name="zone">Zona Horaria:  </string>
+    <string name="summer">Horario de Verano: </string>
+
+    <string name="gpsAlert">Activar GPS si los SSID no aparecen. Necesario en las versiones nuevas.</string>
+
+    <!-- Configuración del porcentaje de apertura -->
+    <string name="ConfPerc_ini">Pulsar el botón \"Bajar\", y cuando la persiana esté completamente cerrada, pulse \"Parar\"</string>
+    <string name="ConfPerc_fin">Pulsar ahora el botón \"Subir\", y cuando la persiana esté completamente abierta pulse \"Parar\"</string>
+
+
+    <!-- Añadidos -->
+    <string name="actPercent">Habilitar porcentaje:</string>
+    <string name="actNtp">Activar NTP:</string>
+    <string name="action_percent">Porcentaje de apertura:</string>
+
+    <string name="reboot">Reinciar Dispositivo</string>
+    <string name="auth">Usar Auth:  </string>
+    <string name="web_user">Usuario Web:  </string>
+
+    <string name="titl_delscene">¿Desea eliminar la escena "%s" ?</string>
+    <string name="opt_scene">Eliminar escena</string>
+
+    <string name="cust_open">Apertura personalizada:</string>
+
+</resources>

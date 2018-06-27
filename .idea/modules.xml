@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://C:\Users\Wan\Desktop\Domotica_bsNet-master\Domotica_bsNet.iml" filepath="C:\Users\Wan\Desktop\Domotica_bsNet-master\Domotica_bsNet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Domotica_bsNet-master.iml" filepath="$PROJECT_DIR$/Domotica_bsNet-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>
