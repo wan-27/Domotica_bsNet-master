@@ -1,0 +1,79 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:robobunny="http://robobunny.com">
+<!--
+ Copyright (C) 2017-2018 Autor: Juan Carlos Tejero Calado
+ Licensed under GNU's GPL 2, see README
+-->
+
+<PreferenceCategory
+    android:title="@string/opt_Network">
+    
+    <PreferenceScreen
+        android:title="@string/preferences_redSouliss"
+        android:summary="">
+
+        <EditTextPreference
+            android:name="udpport"
+            android:dialogTitle="@string/opt_udpport"
+            android:inputType="number"
+            android:summary="@string/udpport_summary"
+            android:key="udpportIC"
+            android:title="@string/opt_udpport" />
+
+        <EditTextPreference
+            android:name="userindex"
+            android:dialogTitle="@string/opt_userindex"
+            android:inputType="number"
+            android:key="userindexIC"
+            android:title="@string/opt_userindex" />
+
+        <EditTextPreference
+            android:name="nodeindex"
+            android:dialogTitle="@string/opt_nodeindex"
+            android:inputType="number"
+            android:key="nodeindexIC"
+            android:title="@string/opt_nodeindex" />
+
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:title="@string/service">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="checkboxDataService"
+            android:summary="@string/opt_serviceEnable_desc"
+            android:textSize="12px"
+            android:title="@string/opt_serviceEnable"/>
+
+        <robobunny.SeekBarPreference
+            android:defaultValue="15"
+            android:key="serviceInterval"
+            android:max="200"
+            android:summary="@string/opt_serviceinterval_desc"
+            android:title="@string/opt_serviceinterval"
+            robobunny:min="1"
+            robobunny:unitsLeft=""
+            robobunny:unitsRight=" sec" />
+    </PreferenceScreen>
+
+    <Preference
+        android:key="wifi"
+        android:title="Wifi"/>
+    
+</PreferenceCategory>
+
+<PreferenceCategory
+    android:title="@string/preferences_credits">
+    <Preference
+        android:key="email"
+        android:title="@string/preferences_email_title"
+        android:summary="jctejero@uma.es"/>
+    <Preference
+        android:key="version"
+        android:title="@string/preferences_version_title"
+        android:summary="0.1"/>
+</PreferenceCategory>
+
+</PreferenceScreen>

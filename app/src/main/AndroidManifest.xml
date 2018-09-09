@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.domotica.domotica_bsnet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_iconapp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service
+            android:name="soulissclient.Service.SoulissNetService"
+            android:label="Net Service" />
+
+        <activity
+            android:name="com.domotica.domotica_bsnet.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.domotica.domotica_bsnet.MainActivity"
+            android:theme="@style/AppTheme"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".ActivityScan"
+            android:parentActivityName=".MainActivity"
+            android:theme="@android:style/Theme.Black" />
+
+        <!-- android:theme="@android:style/Theme.DeviceDefault"> -->
+        <activity
+            android:name=".Utils.Prefs"
+            android:theme="@android:style/Theme.Black">
+            android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.PREFERENCE" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity to control blind/door motors -->
+        <activity
+            android:name=".Utils.MotorControlActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+        <!-- Activity to configure device -->
+        <activity
+            android:name=".ActivityOptions"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+        <activity
+            android:name=".DeviceConfigurations.ActivityGeneralConf"
+            android:label="@string/gen_conf"
+            android:parentActivityName=".ActivityOptions"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+        <activity
+            android:name=".DeviceConfigurations.ActivityNetConf"
+            android:label="@string/net_conf"
+            android:parentActivityName=".ActivityOptions"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+        <activity
+            android:name=".DeviceConfigurations.ActivityNetInfo"
+            android:label="@string/ntp_conf"
+            android:parentActivityName=".ActivityOptions"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+        <activity
+            android:name=".DeviceConfigurations.ActivityNtpConf"
+            android:label="@string/ntp_conf"
+            android:parentActivityName=".ActivityOptions"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+        <activity
+            android:name=".Scenes.ActivityScene"
+            android:label="@string/act_scene"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+        <activity
+            android:name=".Scenes.ActivityShowScene"
+            android:label="@string/act_scene"
+            android:parentActivityName=".Scenes.ActivityScene"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="list_item_title">#ffffff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+
+    <color name="list_text">#303030</color>
+    <color name="list_text_title">#992416</color>
+
+    <color name="button_pressed">#ff8a00</color>
+    <color name="button_focused">#ff8a00</color>
+    <color name="button_default">#1c76bb</color>
+
+    <color name="grey">#cccccc</color>
+    <color name="orange1">#ff9900</color>
+    <color name="orange2">#ff6600</color>
+    <color name="orange3">#ff3300</color>
+
+    <color name="light_green">#3c2ae668</color>
+    <color name="dark_blue">#180065</color>
+    <color name="light_blue">#334ee9ff</color>
+    <color name="medium_green">#3d853e</color>
+
+    <color name="option_list_1">#E2F9F8</color>
+    <color name="option_list_2">#ECF9F8</color>
+    <color name="option_list_pressed_gr1">#b4f9f6</color>
+    <color name="option_list_pressed_gr2">#0bcbc3</color>
+
+</resources>

@@ -1,0 +1,235 @@
+<resources>
+    <string name="app_name">Home Automation bsNet</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Devices</item>
+        <item>Options</item>
+        <item>Exit</item>
+    </string-array>
+
+    <string-array name="host_options">
+        <item>Rename</item>
+        <item>Open Web</item>
+        <item>Device configuration</item>
+        <item>Scenes</item>
+        <item>Conf. % Opening</item>
+        <item>Remove</item>
+    </string-array>
+
+    <!--Device configuration  -->
+    <string-array name="configuration_options">
+        <item>General Configuration</item>
+        <item>Net Configuration</item>
+        <item>Net Information</item>
+        <item>NTP Settings</item>
+    </string-array>
+
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="info_unknown">Unknown</string>
+    <string name="info_gateway">GATEWAY</string>
+    <string name="info_device">Device</string>
+    <string name="info_vendor">%1$s/ssid: %2$s</string>
+
+    <!-- Net Messages -->
+    <string name="net_ip">IP: %1$s/%2$d (%3$s)</string>
+    <string name="net_carrier">CARRIER: %s</string>
+    <string name="net_ssid">SSID: %s</string>
+    <string name="net_mode">MODE: %s</string>
+    <string name="net_mode_wifi">WiFi (%1$s %2$s)</string>
+    <string name="net_mode_mobile">Mobile</string>
+    <string name="net_mode_eth">Ethernet (Not supported yet)</string>
+    <string name="net_mode_unknown">Unknown</string>
+
+    <!-- Discover messages -->
+    <string name="discover_start">Discovery started …</string>
+    <string name="discover_finished">Discovery finished !</string>
+    <string name="discover_canceled">Discovery canceled !</string>
+    <string name="discover_empty">Press Discover to start</string>
+
+    <!-- WiFi Messages -->
+    <string name="wifi_enabled">Wifi is enabled</string>
+    <string name="wifi_enabling">Wifi is enabling</string>
+    <string name="wifi_disabling">Wifi is disabling</string>
+    <string name="wifi_disabled">Wifi is disabled</string>
+    <string name="wifi_scanning">Wifi is scanning</string>
+    <string name="wifi_associating">Wifi is associating with %s</string>
+    <string name="wifi_dhcp">Obtaining IP address from %s</string>
+    <string name="wifi_unknown">Wifi state unknown</string>
+
+    <!-- PREFERENCE MENU -->
+    <string name="preferences_credits">Credits</string>
+    <string name="preferences_email_title">Contact</string>
+    <string name="preferences_version_title">Version</string>
+    <string name="preferences_redSouliss">Souliss Network</string>
+    <string name="service">Service </string>
+    <string name="general" >General</string>
+
+    <!-- OPTIONS -->
+    <string name="opt_udpport">UDP Port</string>
+    <string name="udpport_summary">Choose outgoing datagrams\'port (%1$d)</string>
+    <string name="opt_userindex">User Index</string>
+    <string name="opt_nodeindex">Node Index</string>
+    <string name="opt_Network">Network</string>
+    <string name="opt_serviceEnable">Data Service</string>
+    <string name="opt_serviceEnable_desc">Background service keeps Souliss synchronized</string>
+    <string name="opt_serviceinterval">Service Interval</string>
+    <string name="opt_serviceinterval_desc">Higher speeds require more battery and resources</string>
+    <string name="userindex_summary">The User index identifies SoulissApp to your Souliss Gateway. Current value is %1$d. Tap to change it, in range 1&#8211;100</string>
+    <string name="nodeindex_summary">The Node index identifies this device to your Souliss Gateway. Current value is %1$d. Tap to change it, in range 1&#8211;254</string>
+
+    <!-- VARIOUS -->
+    <string name="udphint">Please insert a number in range 1&#8211;65535</string>
+    <string name="useridxhint">Please insert a number in range 1&#8211;100</string>
+    <string name="nodeidxhint">Please insert a number in range 1&#8211;254</string>
+
+    <!-- MESSAGES -->
+    <string name="ExitMsg">"Please click BACK again to exit"</string>
+    <string name="msg_NO_webDevice">Device without web</string>
+
+    <!-- BUTTONS -->
+    <string name="btn_discover">Discover</string>
+    <string name="btn_options">Options</string>
+    <string name="ScanNetwork">Search Devices</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_discover_cancel">Cancel</string>
+    <string name="btn_subir">Up</string>
+    <string name="btn_bajar">Down</string>
+    <string name="btn_stop">Stop</string>
+    <string name="reboot">Reboot device</string>
+
+    <!-- MAIN MENU -->
+    <string name="menu_exit">Exit</string>
+    <string name="menu_options">Options</string>
+    <string name="menu_ojo">Show All</string>
+
+    <!-- Titles DialogFragments -->
+    <string name="titl_hostname">Rename device</string>
+    <string name="opt_hostname">Device Options</string>
+    <string name="titl_deldevice"> Delete the device "%s" ?</string>
+
+    <!-- Blinds States -->
+    <string name="st_blindstate">Blind State : %s</string>
+    <string name="st_open">Open</string>
+    <string name="st_close">Close</string>
+    <string name="st_stop">Stop</string>
+    <string name="st_opening">Opening</string>
+    <string name="st_closing">Closing</string>
+
+    <string name="conf_device">Device Configuration</string>
+    <string name="dev_name">Device Name:  </string>
+    <string name="save_name">Save</string>
+    <string name="blind_perc">%d /%</string>
+
+    <!-- Configurations Activities -->
+    <string name="gen_conf">General Configuration</string>
+    <string name="net_conf">Net Configuration</string>
+    <string name="ntp_conf">NTP Settings</string>
+
+    <string name="text_netopt">Settings to connect with Router</string>
+    <string name="pass">Password: </string>
+    <string name="netmask">Netmask:</string>
+    <string name="gateway">Gateway:</string>
+    <string name="net_state">Net State:</string>
+
+    <string name="ntp_time">NTP Time:</string>
+    <string name="ntp_date">NTP Date:</string>
+    <string name="ntp_lastsync">Last Sync:</string>
+    <string name="netinfo_refresh">Refresh</string>
+
+    <string name="name_scene">Name:</string>
+    <string name="state_scene">State:</string>
+    <string name="activ_scene">Active</string>
+    <string name="inactiv_scene">Inactive</string>
+    <string name="week_scene">Week Day:</string>
+    <string name="time_scene">Time:</string>
+    <string name="action_scene">Action:</string>
+    <!--<string name="action_percentage">Percentage:</string>-->
+    <string name="mon_scene">Mon</string>
+    <string name="tue_scene">Tue</string>
+    <string name="wed_scene">Wed</string>
+    <string name="thu_scene">Thu</string>
+    <string name="fri_scene">Fri</string>
+    <string name="sat_scene">Sat</string>
+    <string name="sun_scene">Sun</string>
+    <string name="delete">Delete</string>
+    <string name="act_scene">Scenes</string>
+    <string name="addScene">Add scene</string>
+
+    <string-array name="scene_options">
+        <item>Open</item>
+        <item>Close</item>
+    </string-array>
+
+    <!-- NTP Server Messages -->
+    <string name="ntp_server">NTP Server:</string>
+    <string name="update">Update:</string>
+    <string name="update_info">minutes (0=disable)</string>
+    <string name="zone">Time Zone:</string>
+    <string name="summer">Summer Time:</string>
+    <string name="enableScn">Enable scenes:</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="TZone">
+        <item>(GMT-12:00)</item>
+        <item>(GMT-11:00)</item>
+        <item>(GMT-10:00)</item>
+        <item>(GMT-09:00)</item>
+        <item>(GMT-08:00)</item>
+        <item>(GMT-07:00)</item>
+        <item>(GMT-06:00)</item>
+        <item>(GMT-05:00)</item>
+        <item>(GMT-04:00)</item>
+        <item>(GMT-03:30)</item>
+        <item>(GMT-03:00)</item>
+        <item>(GMT-02:00)</item>
+        <item>(GMT-01:00)</item>
+        <item>(GMT+00:00)</item>
+        <item>(GMT+01:00)</item>
+        <item>(GMT+02:00)</item>
+        <item>(GMT+03:00)</item>
+        <item>(GMT+03:30)</item>
+        <item>(GMT+04:00)</item>
+        <item>(GMT+04:30)</item>
+        <item>(GMT+05:00)</item>
+        <item>(GMT+05:30)</item>
+        <item>(GMT+05:45)</item>
+        <item>(GMT+06:00)</item>
+        <item>(GMT+06:30)</item>
+        <item>(GMT+07:00)</item>
+        <item>(GMT+08:00)</item>
+        <item>(GMT+09:00)</item>
+        <item>(GMT+09:30)</item>
+        <item>(GMT+10:00)</item>
+        <item>(GMT+11:00)</item>
+        <item>(GMT+12:00)</item>
+        <item>(GMT+13:00)</item>
+    </string-array>
+
+    <string-array name="openPercentage">
+        <item>0 %</item>
+        <item>25 %</item>
+        <item>50 %</item>
+        <item>75 %</item>
+        <item>100 %</item>
+    </string-array>
+
+    <string name="device">Device:</string>
+    <string name="gpsAlert">Enable GPS if SSIDs do not appear. Necessary in the new versions.</string>
+
+    <!-- Configuration of the Opening percentage -->
+    <string name="ConfPerc_ini">Press the button "Down", and "Stop", when this closed completely blind</string>
+    <string name="ConfPerc_fin">Now, press the button "Up", and when this open completely the blind, press the button "stop</string>
+
+    <string name="actPercent">Show Open %:</string>
+    <string name="actNtp">Activate NTP:</string>
+    <string name="action_percent">Opening percentaje:</string>
+
+    <string name="time_system">System\'s Time:</string>
+    <string name="lanDateFormat">"yyyy-MM-dd HH:mm"</string>
+
+    <string name="titl_delscene">Delete the scene "%s" ?</string>
+    <string name="opt_scene">Delete scene</string>
+
+</resources>
