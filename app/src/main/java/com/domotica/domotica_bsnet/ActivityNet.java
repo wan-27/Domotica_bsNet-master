@@ -1,6 +1,7 @@
 package com.domotica.domotica_bsnet;
 
 //import android.app.Activity;
+import android.annotation.SuppressLint;
 import android.support.v4.app.FragmentActivity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -70,6 +71,7 @@ public abstract class ActivityNet extends FragmentActivity {
     protected abstract void cancelTasks();
 
     private BroadcastReceiver receiver = new BroadcastReceiver() {
+        @SuppressLint("StringFormatMatches")
         public void onReceive(Context ctxt, Intent intent) {
             info_ip_str = "";
             info_mo_str = "";
