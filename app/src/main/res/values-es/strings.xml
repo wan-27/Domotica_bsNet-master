@@ -125,6 +125,7 @@
     <!-- Actividades de configuración -->
     <string name="gen_conf">Configuración General</string>
     <string name="net_conf">Configuración de Red</string>
+    <string name="net_inf">Información de Red</string>
     <string name="ntp_conf">Ajuste NTP</string>
 
     <string name="text_netopt">Ajustes para conectar con el Router</string>

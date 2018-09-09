@@ -77,7 +77,7 @@
 
         <activity
             android:name=".DeviceConfigurations.ActivityNetInfo"
-            android:label="@string/ntp_conf"
+            android:label="@string/net_inf"
             android:parentActivityName=".ActivityOptions"
             android:theme="@style/Theme.AppCompat.Light" />
 

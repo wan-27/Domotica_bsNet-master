@@ -53,6 +53,11 @@ public class SceneFragment extends Fragment {
         // Required empty public constructor
     }
 
+    public void onResume(){
+        super.onResume();
+
+        loadScenes();
+    }
     public static SceneFragment newInstance(/*parámetros*/) {
         SceneFragment fragment = new SceneFragment();
         // Setup parámetros
@@ -134,7 +139,7 @@ public class SceneFragment extends Fragment {
     }
 
     public void esperarYcargar() {
-        int milisegundos = 250;
+        int milisegundos = 150;
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {

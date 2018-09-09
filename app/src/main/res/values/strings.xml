@@ -125,6 +125,7 @@
     <!-- Configurations Activities -->
     <string name="gen_conf">General Configuration</string>
     <string name="net_conf">Net Configuration</string>
+    <string name="net_inf">Net Information</string>
     <string name="ntp_conf">NTP Settings</string>
 
     <string name="text_netopt">Settings to connect with Router</string>

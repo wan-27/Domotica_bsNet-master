@@ -99,6 +99,8 @@ public class ActivityShowScene extends AppCompatActivity {
             }
         });
 
+
+
         getScnOriginalValues();
 
         tiempo.setOnClickListener(new View.OnClickListener() {
