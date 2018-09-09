@@ -139,7 +139,7 @@ public class SceneFragment extends Fragment {
     }
 
     public void esperarYcargar() {
-        int milisegundos = 150;
+        int milisegundos = 200;
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
@@ -214,7 +214,6 @@ public class SceneFragment extends Fragment {
             mSceneAdapter.notifyDataSetChanged();
 
             //numEscenas.setText(": " + (scenes.size() + 1));
-            esperarYcargar();
             //Create and send Json from scenes
             createscenesjson();
 
